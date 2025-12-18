@@ -31,3 +31,6 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Yank/Paste to system clipboard with leader key
+vim.keymap.set('n', '<leader>y', '"+y', { desc = '[Y]ank to system clipboard' })
+vim.keymap.set('n', '<leader>p', '"+p', { desc = '[P]aste to system clipboard' })
